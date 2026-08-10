@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "memory-scanner-mcp"
-version = "0.0.2"
+version = "0.0.3"
 description = "基于 pymem 的内存扫描与修改 MCP 服务器，支持进程内存读写、扫描、模式搜索等功能"
 readme = "README.md"
 license = "MIT"
@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 authors = [
     { name = "miloira" },
 ]
-keywords = ["mcp", "memory", "scanner", "pymem", "process"]
+keywords = ["mcp", "fastmcp", "memory", "scanner", "pymem", "process"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -26,9 +26,9 @@ classifiers = [
     "Topic :: Software Development :: Debuggers",
 ]
 dependencies = [
-    "pymem>=1.13.1",
-    "mcp>=1.0.0",
-    "psutil>=5.9.0",
+    "pymem==1.14.0",
+    "fastmcp==3.4.6",
+    "psutil==7.0.0",
 ]
 
 [project.urls]

@@ -16,7 +16,7 @@ import pymem.process
 import pymem.memory
 import pymem.pattern
 import psutil
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 
 # 创建 MCP 服务器实例
 mcp = FastMCP("MemoryScanner")
